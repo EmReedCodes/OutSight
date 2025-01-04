@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# OutSight
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+OutSight is a personal project designed to demonstrate the differences in web experiences for users who rely on accessibility features versus those who do not. It highlights the importance of inclusive design and showcases examples of good and bad accessibility practices.
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of this project is to:
 
-## Expanding the ESLint configuration
+- Raise awareness about the experiences of users who rely on assistive technologies.
+- Show the stark contrast between accessible and inaccessible web design.
+- Encourage inclusive design for all users.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Node.js (v22 or higher) managed via `nvm`
+- npm (v10 or higher)
+
+### Installation (but please dont yet)
+
+1.  Clone the repository:
+
+```bash
+
+git clone https://github.com/yourusername/OutSight.git
+
+cd OutSight
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2.  Activate the correct Node.js version:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+nvm use
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3.  Install dependencies:
+
+npm install
+
+4.  Start the development server:
+
+npm run dev
+
+5.  Open your browser and navigate to:
+
+http://localhost:3006
+
+Features
+• Good and bad examples of alt text.
+• Visual and auditory feedback to simulate accessible vs. non-accessible experiences.
+• Built with modern tools: Vite, React, TypeScript, and Tailwind CSS.
+
+Configuration
+• Vite Port: The development server is configured to run on port 3006. If the port is in use, Vite will throw an error.
+• Node.js Version: The project uses Node.js v22, managed via nvm. Ensure nvm is installed and configured correctly to avoid version mismatches.

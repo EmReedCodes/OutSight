@@ -1,0 +1,15 @@
+//shared configs
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
